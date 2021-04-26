@@ -1,159 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <!-- Título de la Página -->
-       <title>Adidas</title>
-       <meta title="Adidas">
 
-       <!-- Codificación de Caracteres en Español -->
-       <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L U M I N</title>
 
-       <!-- Inclusión del Ícono de Favoritos -->
-       <link rel="icon" href="img/favicon.png">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-       <!-- Meta para bloquear el Zoom Out en móviles - Responsive Design -->
-       <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-       <!-- Cargar librería PrefixFree desde CDN -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-       <!-- Cargar librería de íconos Font Awesome Icons -->
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
 
-       <!-- Cargar tipografías desde Google Fonts -->
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<body>
+    <!-- Boton Whatsapp -->
+    <aside id="boton-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=573006225789" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </aside>
 
-       <!-- Conexión hacia CSS propio -->
-       <link rel="stylesheet" href="css/estilo.css">
-    </head>
+    <!-- Menu Responsive -->
+    <aside id="menu">
+        <a href="#" id="abrir">
+            <i class="fas fa-bars"></i>
+        </a>
 
-    <body>
-         <aside id="menu-adidas">
-            <a href="#" id="abrir">
-                <i class="fas fa-bars"></i>
-            </a>
-            <a href="#" id="cerrar">
-                <i class="fas fa-times"></i>
-            </a>
-            <nav>
-                <a href="#slide-imagenes">Collection</a>
-                <a href="#mapa-googlemaps">Find Us</a>
-                <a href="#formulario-contactenos">Subscribe</a>
-            </nav>
-        </aside>
+        <a href="#" id="cerrar">
+            <i class="fas fa-times"></i>
+        </a>
 
-        <!-- Componente Botón WhatsApp -->
-        <aside id="boton-whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=5730062257893" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </aside>
+        <nav>
+            <a href="#section-a">HOME</a>
+            <a href="#section-c">SHOP</a>
+            <a href="#section-b">ABOUT US</a>
+            <a href="#footer">CONTACT</a>
+        </nav>
+    </aside>
 
-        <header>
-            <article>
-                <figure>
-                    <a href="index.html">
-                        <img src="img/logo.png">
-                    </a>
-                </figure>
-                <nav>
-                    <a href="#slide-imagenes">Collection</a>
-                    <a href="#mapa-googlemaps">Find Us</a>
-                    <a href="#formulario-contactenos">Subscribe</a>
-                </nav>
-            </article>
-        </header>
-
-        <main>
-                <!-- Slide con Imágenes -->
-
-            <section id="slide-imagenes">
-                <article class="slick-banner">
-                    <figure id="slide-01">
-                        <div class="contenedor">
-                            <h3>New Collection</h3>
-                            <a href="https://www.instagram.com/adidas/">See more</a>
-                        </div>
-                    </figure>
-
-                    <figure id="slide-02">
-                        <div class="blanco">
-                            <h3>It's soccer time!</h3>
-                            <a href="https://www.instagram.com/adidas/">See more</a>
-                        </div>
-                    </figure>
-
-                    <figure id="slide-03">
-                        <div class="blanco">
-                            <h3>Bad Bunny</h3>
-                            <a href="https://www.instagram.com/adidas/">See more</a>
-                        </div>
-                    </figure>
-
-                    <figure id="slide-04">
-                        <div class="contenedor">
-                            <h3>Go for the Run</h3>
-                            <a href="https://www.instagram.com/adidas/">See more</a>
-                        </div>
-                    </figure>
-                </article>
-            </section>
-
-               <!-- Mapa de Google Maps -->
-
-               <section id="mapa-googlemaps">
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d125323.41088012613!2d-74.8243633!3d11.0118496!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42da607077ead%3A0x24d2ca3bca6a4b50!2sadidas%20Store%20Viva%20Barranquilla!5e0!3m2!1ses-419!2sco!4v1618784868485!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <div class="findus"> 
-                        <h3>Find Us!</h3>
-                        <p>We're in USA, Colombia, England, China, Japan, among other countries.</p> 
-                    </div>
-                </section>
-
-        <!-- Video desde YouTube -->
-
-        <section id="banner-video-html5">
-            <video width="100%" height="700" preload="auto" controls>
-                <source src="img/10000000_339677501067221_3319187241132614710_n.mp4" type="video/mp4">
-            </video>
-
-            <!-- Formulario -->
-            <section id="formulario-contactenos">
-                <article>
-                    <form id="formu-contacto" action="" method="get">
-                        <input type="text" id="nombre" placeholder="Name">
-                        <input type="email" id="correo" placeholder="Email">
-                        <input type="submit" id="enviar" value="SEND">
-                    </form>
-                </article>
-            </section>
-        </main>
-
-        <footer>
-             
+    <!-- Header -->
+    <header id="header">
+        <article>
             <figure>
                 <a href="index.html">
-                    <img src="img/logo.png">
+                    <img src="img/logo.png" alt="logo">
                 </a>
             </figure>
-        </footer>
+            <nav>
+                <a href="#section-a">HOME</a>
+                <a href="#section-c">SHOP</a>
+                <a href="#section-b">ABOUT US</a>
+                <a href="#footer">CONTACT</a>
+            </nav>
+        </article>
+    </header>
 
-        <!-- Zona de JavaScript -->
+    <!-- Showcase Section -->
+    <section id="section-a" class="section-grid">
+        <div class="container">
+            <h1>Only highest quality for men</h1>
+            <a class="btn grey-btn" href="#">Shop now</a>
+        </div>
+        <img src="img/lumin-unsplash-A0xnM564y3h7e70x.jpg" alt="img1">
+    </section>
 
-        <!-- 1°: LLamado a jQuery desde un CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
-        <!-- 2°: Llamado a librerías hijo de jQuery -->
-        <!-- jQuery Easing desde CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- About Us Section -->
+    <section id="section-b" class="section-grid">
+        <div class="container">
+            <h3>Invest in yourself</h3>
+            <h1>Start your journey with us</h1>
+            <p>We have been in business since 2004 and have a large community of happy clients. Our products are vegan friendly and cruelty free. We have developed our own proprietary technology so that our products can be used by people of all ages and
+                body types! Let us know your experience and we would love to help!</p>
+        </div>
+        <img src="img/lumin-unsplash-mePj7zekwVfj9LVY-w500.jpg" alt="img2">
+        <img src="img/lumin-unsplash-m7VNl6nvLWF8916Y-w500.jpg" alt="img3">
+        <img src="img/lumin-unsplash-A85gxW1qv0hK9ar0-w800.jpg" alt="img4">
+    </section>
 
-        <!-- Cargar JS propio -->
-        <script src="js/script.js"></script>
+    <!-- Products Section -->
+    <section id="section-c">
+        <h1>Our products</h1>
+        <div class="container">
+            <div class="img img-1"></div>
+            <p class="product-info responsive">Shaving accessories</p>
+            <div class="img img-2"></div>
+            <p class="product-info responsive">Gift box</p>
+            <div class="img img-3"></div>
+            <p class="product-info responsive">Creams</p>
+            <a class="btn grey-btn responsive" href="#">Shop now</a>
+        </div>
+        <div class="container center">
+            <p>Shaving accessories</p>
+            <p>Gift box</p>
+            <p>Creams</p>
+        </div>
+        <div class="container center">
+            <a class="btn grey-btn" href="#">Shop now</a>
+        </div>
+    </section>
 
-        <!-- Llamado a Slick Slider desde CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Location Section -->
+    <section id="section-d" class="section-grid">
+        <div class="map-container">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Colombia,%20Barranquilla&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://123movies-to.org"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 500px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net">adding google maps to wordpress</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none!important;
+                            height: 500px;
+                            width: 500px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Find us</h1>
+            <p>Our official stores around the world.</p>
+            <ul>
+                <li>Colombia</li>
+                <li>United States</li>
+                <li>England</li>
+                <li>Spain</li>
+            </ul>
+        </div>
+    </section>
 
-    </body>
+    <!-- Review Section -->
+    <section id="section-e">
+        <video width="600" height="400" controls preload="auto" src="multimedia/review.mp4"></video>
+    </section>
+
+    <!-- Footer con formulario -->
+    <section id="footer" class="section-grid">
+        <div>
+            <h3>Address</h3>
+            <p>Bogotá, Colombia</p>
+            <p>Avenia 72, Cr. 15 San Luis</p>
+            <div>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div>
+            <h3>Contacts</h3>
+            <p>01-8000-222-222</p>
+        </div>
+        <div class="flex">
+            <h3>Suscribe to our newsletter</h3>
+            <p>Email address</p>
+            <input type="email" placeholder="Email address">
+            <a class="btn grey-btn" href="#">Submit</a>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+header,
+main,
+footer,
+section {
+    width: 100%;
+}
+
+.btn {
+    color: white;
+    text-align: center;
+    width: 200px;
+    padding: 1rem 1.4rem;
+    letter-spacing: 0.08rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info {
+    margin: 0 auto 1.5rem;
+    justify-items: center;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.responsive {
+    display: none;
+}
+
+
+/* Menu Responsive */
+
+aside#menu {
+    width: 290px;
+    height: 100%;
+    display: none;
+    margin: 0;
+    float: none;
+    position: fixed;
+    top: 0;
+    left: -290px;
+    z-index: 99999;
+    background: rgba(31, 29, 29, 0.603);
+}
+
+aside#menu a#abrir {
+    width: 35px;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: #fff;
+    color: rgba(31, 29, 29, 0.603);
+    text-align: center;
+    padding: 6px 0;
+    font-size: 1.25em;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.3s ease-in;
+}
+
+aside#menu a#abrir:hover {
+    background: rgb(255, 217, 0);
+    transition: all 0.3s ease-in;
+}
+
+aside#menu a#cerrar {
+    width: 35px;
+    height: auto;
+    display: none;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: #fff;
+    color: rgba(31, 29, 29, 0.603);
+    text-align: center;
+    padding: 6px 0;
+    font-size: 1.25em;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.3s ease-in;
+}
+
+aside#menu a#cerrar:hover {
+    background: rgb(255, 217, 0);
+    transition: all 0.3s ease-in;
+}
+
+aside#menu nav {
+    height: auto;
+    width: 80%;
+    margin: 10% auto;
+    float: none;
+    position: relative;
+}
+
+aside#menu nav a {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    float: none;
+    position: relative;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1em;
+    padding: 10px 0;
+    color: #fff;
+    letter-spacing: 0.07em;
+    font-family: 'Catamaran', sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+aside#menu nav a:hover {
+    color: rgb(255, 217, 0);
+    transition: all 0.3s ease-in;
+}
+
+
+/* Boton WhatsApp */
+
+aside#boton-whatsapp {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    float: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+aside#boton-whatsapp a {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    float: none;
+    position: relative;
+    display: block;
+    text-align: center;
+    color: #fff;
+    background: rgb(43 199 4);
+    font-size: 1.5em;
+    padding: 8px 0;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+}
+
+aside#boton-whatsapp a:hover {
+    background: #d00f0f;
+    transition: all 0.3s ease-in;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    float: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99990;
+    background-color: black;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header article {
+    width: 80%;
+    height: 90px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+}
+
+header article figure {
+    width: 94px;
+    height: 110px;
+    margin: 20px;
+    float: left;
+    position: relative;
+}
+
+header article figure a {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    display: block;
+    transition: all 0.3s ease-in;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1em;
+    text-decoration: none;
+}
+
+header article figure a img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    display: block;
+}
+
+header article figure a:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in;
+}
+
+header article nav {
+    width: 509px;
+    height: 40px;
+    margin: 25px 0;
+    float: right;
+    position: relative;
+}
+
+header article nav a {
+    width: auto;
+    height: auto;
+    margin: 0 15px;
+    float: left;
+    position: relative;
+    display: block;
+    padding: 12px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0.09em;
+    text-shadow: 0 0 8px rgb(0 0 0 / 70%);
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+}
+
+header article nav a:hover {
+    border-bottom: 1px solid white;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 8px rgb(0 0 0 / 30%);
+    transition: all 0.3s ease-in;
+}
+
+
+/* Section A */
+
+#section-a {
+    margin-top: 90px;
+}
+
+#section-a div {
+    background-color: black;
+    color: white;
+}
+
+#section-a div h1 {
+    font-size: 4.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.grey-btn {
+    background: #2e3538;
+    margin: 2rem 0;
+    transition: all .2s linear;
+}
+
+.grey-btn:hover {
+    background: #444f54;
+    transition: all .2s linear;
+}
+
+
+/* Secition B */
+
+#section-b div {
+    width: 83%;
+    font-family: 'Helvetica', sans-serif;
+    color: #2e3538;
+}
+
+#section-b div h3 {
+    font-weight: 300;
+}
+
+#section-b div h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0 1.5rem 0;
+}
+
+#section-b div p {
+    font-weight: 100;
+    margin: 1.5rem 0;
+    line-height: 1.7;
+}
+
+
+/* Section C */
+
+#section-c .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    margin: 4rem auto 0 auto;
+    width: 90%;
+    grid-gap: 2rem;
+    justify-items: center;
+}
+
+#section-c h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem 0;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 100;
+    color: #2e3538;
+}
+
+#section-c div.container.center {
+    margin: 1rem auto;
+    justify-items: center;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#section-c div.container.center:last-child {
+    grid-template-columns: 1fr;
+    margin: 3rem auto;
+}
+
+.container div.img {
+    width: 350px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-1 {
+    background: url('../img/lumin-unsplash-mk3XWbXbPWFvvN96-w1370.jpg') no-repeat;
+}
+
+.img-2 {
+    background: url('../img/lumin-unsplash-m2Wy3RO6vyUQLNkO-w1370.jpg') no-repeat;
+}
+
+.img-3 {
+    background: url('../img/lumin-unsplash-mjEOBlXgWrU30PXE-w1370.jpg') no-repeat;
+}
+
+
+/* Section D */
+
+#section-d {
+    padding: 2rem;
+}
+
+#section-d .map-container {
+    margin: 0 auto;
+}
+
+#section-d .container {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0 auto;
+}
+
+#section-d .container h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.5rem 0;
+}
+
+#section-d .container p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#section-d .container ul li {
+    list-style: none;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#section-d .container p,
+li {
+    color: #2e3538;
+}
+
+
+/* Review Section */
+
+#section-e {
+    background: black;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#section-e video {
+    width: 80%;
+}
+
+
+/* Footer */
+
+#footer {
+    padding: 4rem;
+    background: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    gap: 1.5rem;
+}
+
+#footer.section-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#footer div h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#footer div p {
+    line-height: 1.75;
+}
+
+#footer div i {
+    color: white;
+    font-size: 1.25rem;
+    margin: 1.5rem 1.5rem 0 0;
+}
+
+#footer .flex p {
+    color: #ccc;
+}
+
+#footer .flex input {
+    padding: 1rem;
+    background-color: #939597;
+    border: none;
+}
